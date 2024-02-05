@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | Schoology</title>
+        <link rel="icon" href="file:///C:/Users/1709229/OneDrive%20-%20Fairfax%20County%20Public%20Schools/Pictures/Excel/Screenshot%202024-01-26%20135146.png" type="image/x-icon">
+    </head>
+    <body>
+        <WebPartPages:AllowFraming runat="server"  />
+        <script>
+        function create() {
+            var url = document.getElementById('input').value;
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+        function crete() {
+            var url = document.getElementById('input').value;
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+        </script>
+        <input type="text" value="https://sreekar617.github.io/" placeholder="https://sreekar617.github.io/" id='input' autofocus>
+        <button onclick='create()'>nonono dont click</button>
+        <input type="text" value="https://sreekar617.github.io/" placeholder="https://sreekar617.github.io/" id='input' autofocus>
+        <button onclick='crete()'>nonono dont click me too</button>
+    </body>
+</html>
